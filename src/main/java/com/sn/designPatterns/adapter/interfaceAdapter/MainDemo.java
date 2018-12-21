@@ -13,7 +13,10 @@ package com.sn.designPatterns.adapter.interfaceAdapter;
 public class MainDemo {
 
     public static void main(String[] args){
-        RmvbPlayerImpl rmvbPlayer = new RmvbPlayerImpl();
+        RmvbPlayerChild rmvbPlayer = new RmvbPlayerChild();
         rmvbPlayer.playRmvb("text.rmvb");
     }
 }
+//--------------------
+//测试结果：
+//Playing Rmvb file. Name:text.rmvb

@@ -4,7 +4,7 @@ package com.sn.designPatterns.adapter.objectAdapter;
 import com.sn.designPatterns.adapter.classAdapter.AdvancedMediaPlayer;
 
 /**
- * Copyright (C), 2002-2018, 苏宁易购电子商务有限公司
+ * Copyright (C), 2002-2018,
  * FileName: Mp4Player
  * Author:  18075555
  * Date: 2018/12/19 20:08.

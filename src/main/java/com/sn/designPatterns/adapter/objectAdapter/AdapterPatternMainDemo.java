@@ -3,7 +3,7 @@ package com.sn.designPatterns.adapter.objectAdapter;
 import com.sn.designPatterns.adapter.classAdapter.MediaMP3Player;
 
 /**
- * Copyright (C), 2002-2018, 苏宁易购电子商务有限公司
+ * Copyright (C), 2002-2018,
  * FileName: AdapterPatternMainDemo
  * Author:  18075555
  * Date: 2018/12/19 20:17.

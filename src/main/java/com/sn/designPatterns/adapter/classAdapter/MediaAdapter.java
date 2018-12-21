@@ -12,10 +12,10 @@ package com.sn.designPatterns.adapter.classAdapter;
  */
 public class MediaAdapter implements MediaMP3Player {
 
-    //注入类，
+    //注入依赖，
     AdvancedMediaPlayer advancedMusicPlayer;
 
-
+//定义构造函数
     public MediaAdapter(String audioType){
         if(audioType.equalsIgnoreCase("vlc") ){
             advancedMusicPlayer = new VlcPlayer();

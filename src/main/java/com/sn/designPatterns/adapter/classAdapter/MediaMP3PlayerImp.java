@@ -34,3 +34,7 @@ public class MediaMP3PlayerImp implements MediaMP3Player {
 
     }
 }
+//    Playing mp3 file. Name: beyond the horizon.mp3
+//        Playing Mp4 file. Name:alone.mp4
+//        Playing vlc file. Name:far far away.vlc
+//        Invalid media. avi format not supported
