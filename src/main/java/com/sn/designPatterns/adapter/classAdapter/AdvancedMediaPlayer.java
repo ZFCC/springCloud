@@ -1,4 +1,5 @@
 package com.sn.designPatterns.adapter.classAdapter;
+
 /**
  * Copyright (C), 2002-2018,
  * FileName: AdvancedMediaPlayer

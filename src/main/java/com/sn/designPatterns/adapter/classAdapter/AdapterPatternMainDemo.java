@@ -1,5 +1,7 @@
 package com.sn.designPatterns.adapter.classAdapter;
 
+import com.sn.designPatterns.adapter.objectsAdapter.MediaMP3Player;
+
 /**
  * Copyright (C), 2002-2018,
  * FileName: AdapterPatternMainDemo
@@ -13,11 +15,8 @@ package com.sn.designPatterns.adapter.classAdapter;
 public class AdapterPatternMainDemo {
 
     public static void main(String[] args) {
-       MediaMP3PlayerImp audioPlayer = new MediaMP3PlayerImp();
-
-        audioPlayer.play("mp3", "beyond the horizon.mp3");
+        MediaMP3Player audioPlayer = new MediaAdapter();
         audioPlayer.play("mp4", "alone.mp4");
-        audioPlayer.play("vlc", "far far away.vlc");
-        audioPlayer.play("avi", "mind me.avi");
+
     }
 }

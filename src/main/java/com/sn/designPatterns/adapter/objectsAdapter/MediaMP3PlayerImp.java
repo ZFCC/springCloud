@@ -1,11 +1,8 @@
-package com.sn.designPatterns.adapter.objectAdapter;
+package com.sn.designPatterns.adapter.objectsAdapter;
 
-
-import com.sn.designPatterns.adapter.classAdapter.MediaAdapter;
-import com.sn.designPatterns.adapter.classAdapter.MediaMP3Player;
 
 /**
- * Copyright (C), 2002-2018,
+ * Copyright (C), 2002-2018, 苏宁易购电子商务有限公司
  * FileName: MediaMP3PlayerImp
  * Author:  18075555
  * Date: 2018/12/19 20:14.
@@ -16,22 +13,28 @@ import com.sn.designPatterns.adapter.classAdapter.MediaMP3Player;
  */
 public class MediaMP3PlayerImp implements MediaMP3Player {
 
+    //依赖适配器
+    MediaAdapter mediaAdapter;
 
     @Override
     public void play(String audioType, String fileName) {
-      /*  //播放 mp3 音乐文件的内置支持
+        //播放 mp3 音乐文件的内置支持
         if (audioType.equalsIgnoreCase("mp3")) {
             System.out.println("Playing mp3 file. Name: " + fileName);
         }
         //mediaAdapter 提供了播放其他文件格式的支持
         else if (audioType.equalsIgnoreCase("vlc")
                 || audioType.equalsIgnoreCase("mp4")) {
-
-
+            mediaAdapter = new MediaAdapter(audioType);
+            mediaAdapter.play(audioType, fileName);
         } else {
             System.out.println("Invalid media. " +
                     audioType + " format not supported");
-        }*/
+        }
 
     }
 }
+//    Playing mp3 file. Name: beyond the horizon.mp3
+//        Playing Mp4 file. Name:alone.mp4
+//        Playing vlc file. Name:far far away.vlc
+//        Invalid media. avi format not supported

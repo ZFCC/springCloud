@@ -1,6 +1,8 @@
 package com.sn.designPatterns.adapter.classAdapter;
 
 
+import com.sn.designPatterns.adapter.objectsAdapter.AdvancedMediaPlayer;
+
 /**
  * Copyright (C), 2002-2018,
  * FileName: VlcPlayer

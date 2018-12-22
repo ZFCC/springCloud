@@ -1,35 +1,24 @@
 package com.sn.designPatterns.adapter.classAdapter;
 
+import com.sn.designPatterns.adapter.objectsAdapter.MediaMP3Player;
+
 /**
- * Copyright (C), 2002-2018, 苏宁易购电子商务有限公司
- * FileName: MediaAdapter，创建实现了 MediaMP3Player 接口的适配器类。
+ * Copyright (C), 2002-2018,
+ * FileName: MediaAdapter
  * Author:  18075555
- * Date: 2018/12/19 20:11.
+ * Date: 2018/12/19 20:52.
  * Description: //描述当前类所属模块
  * History: //修改记录
  * <author>      <time>      <version>    <desc>
  * 修改人姓名             修改时间            版本号                  描述
  */
-public class MediaAdapter implements MediaMP3Player {
+public class MediaAdapter extends Mp4Player implements MediaMP3Player {
 
-    //注入依赖，
-    AdvancedMediaPlayer advancedMusicPlayer;
-
-//定义构造函数
-    public MediaAdapter(String audioType){
-        if(audioType.equalsIgnoreCase("vlc") ){
-            advancedMusicPlayer = new VlcPlayer();
-        } else if (audioType.equalsIgnoreCase("mp4")){
-            advancedMusicPlayer = new Mp4Player();
-        }
-    }
-
+    //适配器MediaAdapter实现接口A方法，并且直接引用AdvancedMediaPlayer实现类Mp4Player中的合适方法
+    //实现简单的适配器
     @Override
     public void play(String audioType, String fileName) {
-        if(audioType.equalsIgnoreCase("vlc")){
-            advancedMusicPlayer.playVlc(fileName);
-        }else if(audioType.equalsIgnoreCase("mp4")){
-            advancedMusicPlayer.playMp4(fileName);
-        }
+        super.playMp4(fileName);
     }
+
 }
